@@ -17,20 +17,20 @@
     <!-- Page header-->
     <header class="page-header">
       <!-- Main navigation to other pages -->
-      <nav>
+      <nav class="navbar">
         <!-- header logo  -->
-        <a class="logo" href="">WebStudio</a>
+        <a class="logo" href="">Web<span class="logo-h">Studio</span></a>
 
         <!-- Navigation menu -->
-        <ul class="navbar">
+        <ul class="navbox">
           <li>
-            <a class="navbar-links" href="./">Студия</a>
+            <a class="nav-link" href="./">Студия</a>
           </li>
           <li>
-            <a class="navbar-links" href="./portfolio.html">Портфолио</a>
+            <a class="nav-link" href="./portfolio.html">Портфолио</a>
           </li>
           <li>
-            <a class="navbar-links" href="">Контакты</a>
+            <a class="nav-link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -38,12 +38,12 @@
       <!-- Header links list-->
       <ul class="authnav">
         <li>
-          <a class="authnav-links" href="mailto:info@devstudio.com"
+          <a class="authnav-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a class="authnav-links" href="tel:+380961111111"
+          <a class="authnav-link" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
         </li>
@@ -52,19 +52,19 @@
 
     <!-- Main content -->
     <main>
-      <!-- Hero-bg -->
+      <!-- Hero -->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-button" type="button">Заказать услугу</button>
       </section>
 
       <!-- Features section-->
-      <section class="section">
+      <section class="features-section">
         <!-- Features section hidden title -->
-        <h2 class="section-title">Преимущества</h2>
+        <h2 class="features-title">Преимущества</h2>
         <ul>
           <li>
-            <h3>Внимание к деталям</h3>
+            <h3 class="features-subtitle">Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
@@ -73,7 +73,7 @@
         </ul>
         <ul>
           <li>
-            <h3>Пунктуальность</h3>
+            <h3 class="features-subtitle">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
@@ -82,7 +82,7 @@
         </ul>
         <ul>
           <li>
-            <h3>Планирование</h3>
+            <h3 class="features-subtitle">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
@@ -91,7 +91,7 @@
         </ul>
         <ul>
           <li>
-            <h3>Современные технологии</h3>
+            <h3 class="features-subtitle">Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
@@ -101,8 +101,8 @@
       </section>
 
       <!-- Activities section-->
-      <section class="section">
-        <h2 class="section-title">Чем мы занимаемся</h2>
+      <section class="activ-section">
+        <h2 class="activ-title">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img
@@ -136,9 +136,9 @@
       </section>
 
       <!-- Team members section-->
-      <section class="section">
-        <h2 class="section-title">Наша команда</h2>
-        <ul>
+      <section class="members-section">
+        <h2 class="members-title">Наша команда</h2>
+        <ul class="members-item">
           <li>
             <img
               src="./images/member1.jpg"
@@ -146,11 +146,11 @@
               width="270"
               height="260"
             />
-            <h3>Игорь Демьяненко</h3>
+            <h3 class="members-subtitle">Игорь Демьяненко</h3>
             <p lang="en">Product Designer</p>
           </li>
         </ul>
-        <ul>
+        <ul class="members-item">
           <li>
             <img
               src="./images/member2.jpg"
@@ -158,11 +158,11 @@
               width="270"
               height="260"
             />
-            <h3>Ольга Репина</h3>
+            <h3 class="members-subtitle">Ольга Репина</h3>
             <p lang="en">Frontend Developer</p>
           </li>
         </ul>
-        <ul>
+        <ul class="members-item">
           <li>
             <img
               src="./images/member3.jpg"
@@ -170,11 +170,11 @@
               width="270"
               height="260"
             />
-            <h3>Николай Тарасов</h3>
+            <h3 class="members-subtitle">Николай Тарасов</h3>
             <p lang="en">Marketing</p>
           </li>
         </ul>
-        <ul>
+        <ul class="members-item">
           <li>
             <img
               src="./images/member4.jpg"
@@ -182,7 +182,7 @@
               width="270"
               height="260"
             />
-            <h3>Михаил Ермаков</h3>
+            <h3 class="members-subtitle">Михаил Ермаков</h3>
             <p lang="en">UI Designer</p>
           </li>
         </ul>
@@ -191,15 +191,15 @@
 
     <footer class="footer">
       <!-- Footer logo -->
-      <a class="logo" href="">WebStudio</a>
+      <a class="logo" href="">Web<span class="logo-f">Studio</span></a>
 
       <!-- Footer addresses -->
       <address>
         <ul>
           <li class="post-address">г. Киев, пр-т Леси Украинки, 26</li>
-          <li><a class="footer-links" href="mailto:info@example.com"
+          <li><a class="footer-link" href="mailto:info@example.com"
           >info@example.com</a</li>  
-          <li><a class="footer-links" href="tel:+380991111111">+38 099 111 11 11</a></li>      
+          <li><a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a></li>      
         </ul>
       </address>
     </footer>

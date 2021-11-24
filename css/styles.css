@@ -1,85 +1,154 @@
 :root {
   --primary-color: #757575;
   --secondary-color: #212121;
-  --white: #ffffff;
   --accent-color: #2196f3;
-  --footer-links: rgba(255, 255, 255, 0.6);
+  --color-footer-links: rgba(255, 255, 255, 0.6);
+
+  --white: #ffffff;
+
+  --bg-color-primary: #e5e5e5;
+  --bg-color-secondary: #f5f4fa;
+  --bg-color-add: #2f303a;
 }
 body {
-  background-color: #ffffff;
   color: var(--primary-color);
   font-family: "Roboto", "Arial", sans-serif;
+  background-color: var(--bg-color-primary);
 }
-
-ul {
-  list-style: none;
+.page-header {
+  background-color: var(--white);
 }
-
+/* logo styles in header and footer*/
 .logo {
-  color: var(--accent-color);
-  font-family: "Raleway", sans-serif;
-}
-.hero,
-footer {
-  background-color: #2f303a;
-}
-/* Hero section */
-.hero-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.hero-button {
-  font-family: Roboto;
-  font-style: normal;
+  font-family: "Raleway", "Verdana", sans-serif;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--white);
-  background-color: var(--accent-color);
-}
-
-.hero-button:hover,
-.hero-button:focus {
+  font-size: 26px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-
-/* Header navigation menu style */
-.navbar-links {
+.logo-h {
   color: var(--secondary-color);
 }
-.navbar-links:hover,
-.navbar-links:focus {
+.logo-f {
+  color: var(--white);
+}
+
+/* Navbox and authnav in header*/
+.navbox.authnav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+}
+.nav-link {
+  color: var(--secondary-color);
+}
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
-.authnav-links {
+.authnav-link {
   color: var(--primary-color);
 }
-.authnav-links:hover,
-.authnav-links:focus {
+.authnav-link:hover,
+.authnav-link:focus {
   color: var(--accent-color);
+}
+
+/* hero section */
+.hero {
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--bg-color-add);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.hero-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87em;
+  color: var(--white);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--white);
+  --accent-color: #188ce8;
+}
+/* features section */
+.features-section {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  background-color: var(--bg-color-primary);
+}
+.features-title {
+  visibility: hidden;
+}
+.features-subtitle {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+/* activities section */
+.activ-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* Team members section */
+.members-section {
+  font-size: 16px;
+  line-height: 1.19em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--bg-color-secondary);
+}
+.members-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17em;
+  color: var(--secondary-color);
+}
+.members-item {
+  background-color: var(--white);
+}
+.members-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19em;
+  color: var(--secondary-color);
+}
+
+/* footer */
+.footer {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  background-color: var(--bg-color-add);
 }
 .post-address {
   color: var(--white);
 }
-.footer-links {
-  color: var(--footer-links);
+.footer-link {
+  color: var(--color-footer-links);
 }
 
-h1,
-h2,
-h3 {
-  color: var(--secondary-color);
+/* del bullets */
+ul {
+  list-style: none;
 }
-.hero-title {
-  color: #ffffff;
+/* del linkunderline */
+a {
+  text-decoration: none;
 }
