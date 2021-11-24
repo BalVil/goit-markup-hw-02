@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #757575;
+  --secondary-color: #212121;
+  --white: #ffffff;
+  --accent-color: #2196f3;
+  --footer-links: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-color);
+  font-family: "Roboto", "Arial", sans-serif;
+}
+.logo {
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+}
+.hero,
+footer {
+  background-color: #2f303a;
+}
+.navbar-links {
+  color: var(--secondary-color);
+}
+.navbar-links:hover,
+.navbar-links:focus {
+  color: var(--accent-color);
+}
+.authnav-links {
+  color: var(--primary-color);
+}
+.authnav-links:hover,
+.authnav-links:focus {
+  color: var(--accent-color);
+}
+.post-address {
+  color: var(--white);
+}
+.footer-links {
+  color: var(--footer-links);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--secondary-color);
+}
+.hero-title {
+  color: #ffffff;
+}
