@@ -5,12 +5,16 @@
   --accent-color: #2196f3;
   --footer-links: rgba(255, 255, 255, 0.6);
 }
-
 body {
   background-color: #ffffff;
   color: var(--primary-color);
   font-family: "Roboto", "Arial", sans-serif;
 }
+
+ul {
+  list-style: none;
+}
+
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -19,6 +23,37 @@ body {
 footer {
   background-color: #2f303a;
 }
+/* Hero section */
+.hero-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: var(--accent-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--accent-color);
+}
+
+/* Header navigation menu style */
 .navbar-links {
   color: var(--secondary-color);
 }
