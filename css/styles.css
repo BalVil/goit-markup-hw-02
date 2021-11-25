@@ -1,22 +1,22 @@
 :root {
-  --primary-color: #757575;
+  --theme-color: #757575;
   --secondary-color: #212121;
   --accent-color: #2196f3;
-  --color-footer-links: rgba(255, 255, 255, 0.6);
+  --footer-links-color: rgba(255, 255, 255, 0.6);
 
-  --white: #ffffff;
+  --font-bg-color: #ffffff;
 
   --bg-color-primary: #e5e5e5;
   --bg-color-secondary: #f5f4fa;
   --bg-color-add: #2f303a;
 }
 body {
-  color: var(--primary-color);
+  color: var(--theme-color);
   font-family: "Roboto", "Arial", sans-serif;
   background-color: var(--bg-color-primary);
 }
 .page-header {
-  background-color: var(--white);
+  background-color: var(--font-bg-color);
 }
 /* logo styles in header and footer*/
 .logo {
@@ -27,34 +27,39 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.logo-h {
+.logo-header {
   color: var(--secondary-color);
 }
-.logo-f {
-  color: var(--white);
+.logo-footer {
+  color: var(--font-bg-color);
 }
 
-/* Navbox and authnav in header*/
+/* navbox and authnav in header*/
 .navbox.authnav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
 }
-.nav-link {
+.navbox .nav-link {
   color: var(--secondary-color);
 }
-.nav-link:hover,
-.nav-link:focus {
+.navbox .nav-link:hover,
+.navbox .nav-link:focus {
   color: var(--accent-color);
 }
+.navbox .nav-link.current {
+  color: var(--accent-color);
+}
+
 .authnav-link {
-  color: var(--primary-color);
+  color: var(--theme-color);
 }
 .authnav-link:hover,
 .authnav-link:focus {
   color: var(--accent-color);
 }
+/* Studio page */
 
 /* hero section */
 .hero {
@@ -67,20 +72,23 @@ body {
   font-size: 44px;
   line-height: 1.36em;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--font-bg-color);
 }
-.hero-button {
+.hero .button {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87em;
-  color: var(--white);
+  color: var(--font-bg-color);
   background-color: var(--accent-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   cursor: pointer;
 }
-.hero-button:hover,
-.hero-button:focus {
-  color: var(--white);
+.hero .button:hover,
+.hero .button:focus {
+  color: var(--font-bg-color);
   --accent-color: #188ce8;
+  background-color: var(--accent-color);
 }
 /* features section */
 .features-section {
@@ -105,8 +113,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
-
-/* Team members section */
+/* team members section */
 .members-section {
   font-size: 16px;
   line-height: 1.19em;
@@ -121,7 +128,7 @@ body {
   color: var(--secondary-color);
 }
 .members-item {
-  background-color: var(--white);
+  background-color: var(--font-bg-color);
 }
 .members-subtitle {
   font-weight: 500;
@@ -129,7 +136,44 @@ body {
   line-height: 1.19em;
   color: var(--secondary-color);
 }
+/* Portfolio page */
 
+.projects-title {
+  visibility: hidden;
+}
+.filter .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  background-color: var(--bg-color-secondary);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.filter .button:hover,
+.filter .button:focus {
+  color: var(--font-bg-color);
+  background-color: var(--accent-color);
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.12);
+}
+.project-item {
+  background-color: var(--font-bg-color);
+}
+.project-item .caption {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  color: var(--secondary-color);
+}
+.project-item .desc {
+  font-size: 16px;
+  line-height: 1.87em;
+  letter-spacing: 0.03em;
+}
 /* footer */
 .footer {
   font-size: 14px;
@@ -138,17 +182,17 @@ body {
   background-color: var(--bg-color-add);
 }
 .post-address {
-  color: var(--white);
+  color: var(--font-bg-color);
 }
 .footer-link {
-  color: var(--color-footer-links);
+  color: var(--footer-links-color);
 }
 
-/* del bullets */
+/* remove bullets */
 ul {
   list-style: none;
 }
-/* del linkunderline */
+/* remove link underline */
 a {
   text-decoration: none;
 }
