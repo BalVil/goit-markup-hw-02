@@ -10,12 +10,32 @@
   --bg-color-secondary: #f5f4fa;
   --bg-color-add: #2f303a;
 }
+
+/* remove bullets */
+ul {
+  list-style: none;
+}
+/* remove link underline */
+a {
+  text-decoration: none;
+}
+/* button style */
+button {
+  font-family: inherit;
+}
+
 body {
   color: var(--theme-color);
   font-family: "Roboto", "Arial", sans-serif;
   background-color: var(--bg-color-primary);
 }
+
 .page-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  color: var(--theme-color);
   background-color: var(--font-bg-color);
 }
 /* logo styles in header and footer*/
@@ -101,6 +121,9 @@ body {
   visibility: hidden;
 }
 .features-subtitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14em;
   text-transform: uppercase;
   color: var(--secondary-color);
 }
@@ -176,23 +199,15 @@ body {
 }
 /* footer */
 .footer {
+  background-color: var(--bg-color-add);
+}
+.footer-address {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
-  background-color: var(--bg-color-add);
-}
-.post-address {
   color: var(--font-bg-color);
 }
 .footer-link {
   color: var(--footer-links-color);
-}
-
-/* remove bullets */
-ul {
-  list-style: none;
-}
-/* remove link underline */
-a {
-  text-decoration: none;
 }
